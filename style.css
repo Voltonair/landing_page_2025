@@ -1,0 +1,46 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+/*Image sizes */
+#header-nav img {
+    width: 100px;
+    border-radius: 50%;
+}
+#section-one img {
+    width: 430px;
+    border-radius: 7%;
+    margin-top: 2em;
+}
+
+/*Container CSS*/
+#container {
+    display: flex;
+    flex-direction: column;
+}
+#header-nav-container {
+    background-color: #A4B465;
+}
+#header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-menu {
+    display: inline-block;
+    margin-top: 2em;
+}
+#section-one {
+    display: flex;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+#article {
+    padding: 5em;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
