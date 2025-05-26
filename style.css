@@ -1,12 +1,21 @@
 * {
-    box-sizing: 0;
-    margin: 0;
-    border: 1px solid red;
+ /* border: 1px solid red; */
 }
 
-/*Image sizes */
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    /*Colors and styling*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+/***Image sizes***/
 #header-nav img {
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
 }
 #section-one img {
@@ -15,10 +24,11 @@
     margin-top: 2em;
 }
 
-/*Container CSS*/
+/***Container CSS***/
 #container {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 #header-nav-container {
     background-color: #A4B465;
@@ -30,7 +40,7 @@
 }
 .nav-menu {
     display: inline-block;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 #section-one {
     display: flex;
@@ -38,9 +48,79 @@
     padding-left: 3em;
 }
 #article {
-    padding: 5em;
+    padding: 5em 15em 5em 15em;
 }
 h1 {
     color: white;
     text-align: center;
+    font-style: italic;
+}
+
+/***Container two CSS***/
+#info-container {
+    display: flex;
+    justify-content: center;
+}
+#squares {
+    display: flex;
+}
+.square {
+    display: inline-block;
+    margin: 0.5em;
+}
+.square img {
+    width: 150px;
+    border: 3px #626F47 solid;
+    border-radius: 10px;
+}
+.pholder-text {
+    width: 150px;
+    text-align: center;
+    /*Colors and styling*/
+    color: #A4B465;
+}
+#inspiring-quote {
+    padding: 3em 25em 3em 25em;
+    text-align: center;
+    /*Colors and styling*/
+    background-color: #d1dab0;
+    color: #626F47;
+    font-style: italic;
+}
+h3 {
+    text-align: right;
+    margin-top: 1em;
+}
+#signup {
+    display: flex;
+    background-color: #626F47;
+    justify-self: center;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 2em;
+    width: 80vw;
+    border-radius: 20px;
+}
+#form-spacing {
+ display: flex;
+ align-items: center;
+}
+#form-css {
+    display: inline-block;
+    text-align: right;
+}
+#signup-text {
+    width: 60vw;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+footer {
+    margin-top: 2em;
+    background-color: #A4B465;
+    padding: 2em;
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bolder;
 }
